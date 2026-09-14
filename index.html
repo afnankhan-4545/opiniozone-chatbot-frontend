@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpinioZone AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo">O</div>
+                <div>
+                    <h2>OpinioZone</h2>
+                    <span>AI Assistant</span>
+                </div>
+            </div>
+
+            <button id="newChatBtn" class="new-chat">
+                <span>＋</span> New chat
+            </button>
+
+            <div class="sidebar-info">
+                <p>Ask about products, reviews, ratings and real user experiences.</p>
+            </div>
+
+            <div class="sidebar-bottom">
+                <span class="status-dot"></span>
+                <span>AI is online</span>
+            </div>
+        </aside>
+
+        <section class="chat">
+            <header class="topbar">
+                <div>
+                    <h1>OpinioZone AI</h1>
+                    <p>Product reviews & recommendations</p>
+                </div>
+                <button id="clearBtn" class="icon-btn" title="Clear chat">🗑</button>
+            </header>
+
+            <main id="chatBox" class="chat-box">
+                <div id="welcome" class="welcome">
+                    <div class="welcome-logo">O</div>
+                    <h2>How can I help you?</h2>
+                    <p>Ask me anything about products, reviews and OpinioZone.</p>
+
+                    <div class="suggestions">
+                        <button class="suggestion">What is OpinioZone?</button>
+                        <button class="suggestion">Tell me about iPhone 15 Pro Max</button>
+                        <button class="suggestion">What products are available?</button>
+                        <button class="suggestion">How do product reviews work?</button>
+                    </div>
+                </div>
+            </main>
+
+            <div class="input-wrapper">
+                <form id="chatForm" class="input-area">
+                    <input
+                        id="questionInput"
+                        type="text"
+                        placeholder="Message OpinioZone AI..."
+                        autocomplete="off"
+                        required
+                    >
+                    <button id="sendBtn" type="submit">
+                        <span>➤</span>
+                    </button>
+                </form>
+                <small>OpinioZone AI can make mistakes. Check important information.</small>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
